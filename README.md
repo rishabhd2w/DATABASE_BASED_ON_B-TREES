@@ -1,4 +1,3 @@
- This project i have created with the help b+trees and OOPS
  # B+ Tree
 Implementing B+ tree using C++
 - [x] Search 
