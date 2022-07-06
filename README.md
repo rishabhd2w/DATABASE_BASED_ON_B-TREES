@@ -5,16 +5,8 @@ Implementing B+ tree using C++
 - [X] Structuring the main Function
 - [X] Delete
 
-## Demo :
-
-![Demo](img/demo.gif)
-
-
 
 ## Default DataBase Schema :
-
-Our DataBase Schema Will look something like this-
-	![1](img/database.jpg)
 
 
 ## Summary- What is the project all about? 
@@ -48,13 +40,7 @@ to make more tables then we can make that many BPTree objects !!
 	b.	For Leaf Nodes-
 		i.	ceil(maxLeafLimit/2)<= #of keys <= maxLeafLimit
 		ii.	since Leaf node will point to the dataPtr. It will be of same size as maxLeafLimit to correspond
-			to every key !!!
-
-	![B+ TreeBasics](img/prop_1.png)
-	![B+ TreeBasics](img/prop_2.png)
-	![B+ TreeBasics](img/prop_3.png)
-
-
+			to every key !!
 
 ## Search:
 
@@ -66,9 +52,6 @@ to make more tables then we can make that many BPTree objects !!
 	by ***(maxInternalLimit)ptr2Tree***.
 
 3.	If x is a leaf-node, we search if k is present in the node!
-
-
-	![B+ Search](img/search_1.png)
 
 
 
@@ -97,7 +80,3 @@ b.	If the node is already full, split it into two nodes, distributing the keys e
 	ii.	If the node is non-leaf, exclude the middle value during split and insert the excluded value into 
 		the	parent.
 
-Let's see what would happen if we insert 8 in the below tree :-
-	![InsertionBplus1](img/insert_1.png)
-	![InsertionBplus2](img/insert_2.png)
-	![InsertionBplus3](img/insert_3.png)
